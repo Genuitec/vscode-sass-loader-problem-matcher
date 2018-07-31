@@ -1,0 +1,77 @@
+{
+    "name": "sass-loader-problem-matcher",
+    "displayName": "sass-loader problem matcher",
+    "description": "Provides a sass-loader problem matcher",
+    "version": "1.0.0",
+    "icon": "icon.png",
+    "author": {
+        "email": "info@genuitec.com",
+        "name": "Genuitec",
+        "url": "https://www.genuitec.com/"
+    },
+    "license": "MIT",
+    "publisher": "Genuitec",
+    "engines": {
+        "vscode": "^1.24.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "repository": {
+        "url": "https://github.com/Genuitec/vscode-sass-loader-problem-matcher"
+    },
+    "main": "./out/extension",
+    "activationEvents": [
+        "workspaceContains:*.sass",
+        "workspaceContains:*.scss"
+    ],
+    "contributes": {
+        "problemMatchers": [{
+            "name": "sass-loader",
+            "fileLocation": ["relative", "${workspaceFolder}"],
+            "applyTo": "allDocuments",
+            "source": "sass-loader",
+            "label": "sass-loader",
+            "pattern": [
+                {
+                    "regexp": "^(ERROR) in .\\/(.*)$",
+                    "severity": 1,
+                    "file": 2
+                },
+                {
+                    "regexp": "^Module build failed:$"
+                },
+                {
+                    "regexp": "^(.*)$"
+                },
+                {
+                    "regexp": "^(\\s*)\\^$"
+                },
+                {
+                    "regexp": "(\\s*)(.*)",
+                    "message": 2
+                },
+                {
+                    "regexp": "\\(line (\\d*), column (\\d*)\\)",
+                    "line": 1,
+                    "column": 2,
+                    "loop": false
+                }
+            ]
+        }]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "tslint": "^5.8.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}
