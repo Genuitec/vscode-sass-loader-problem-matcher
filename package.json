@@ -6,14 +6,21 @@
     "icon": "icon.png",
     "author": {
         "email": "info@genuitec.com",
-        "name": "Genuitec",
+        "name": "Genuitec, LLC",
         "url": "https://www.genuitec.com/"
     },
     "license": "MIT",
     "publisher": "Genuitec",
+    "homepage": "https://github.com/Genuitec/vscode-sass-loader-problem-matcher",
     "engines": {
         "vscode": "^1.24.0"
     },
+    "keywords": [
+        "problem",
+        "matcher",
+        "sass",
+        "loader"
+    ],
     "categories": [
         "Other"
     ],
@@ -31,7 +38,7 @@
             "fileLocation": ["relative", "${workspaceFolder}"],
             "applyTo": "allDocuments",
             "source": "sass-loader",
-            "label": "sass-loader",
+            "label": "sass-loader problems",
             "pattern": [
                 {
                     "regexp": "^(ERROR) in .\\/(.*)$",
