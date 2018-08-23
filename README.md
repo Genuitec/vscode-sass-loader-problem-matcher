@@ -1,7 +1,7 @@
 # VSCode sass-loader problem matcher
 
 ## Description
-This extension provides a sass-loader problem matcher.
+This is used by Angular IDE by [CodeMix](https://www.genuitec.com/products/codemix/) to provide enhanced automated reporting of errors from “ng watch” and similar build pipeline tools directly into the workspace.
 
 ![Demo](images/demo-problem-matcher.gif)
 

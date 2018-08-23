@@ -1,7 +1,7 @@
 {
     "name": "sass-loader-problem-matcher",
     "displayName": "sass-loader problem matcher",
-    "description": "Provides a sass-loader problem matcher",
+    "description": "This is used by Angular IDE by CodeMix to provide enhanced automated reporting of errors from \"ng watch\" and similar build pipeline tools directly into the workspace.",
     "version": "1.0.0",
     "icon": "icon.png",
     "author": {
