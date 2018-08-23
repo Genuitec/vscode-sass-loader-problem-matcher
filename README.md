@@ -17,7 +17,7 @@ This is used by Angular IDE by [CodeMix](https://www.genuitec.com/products/codem
 }
 ```
 
-If you plan to use this extension for Angular CLI development, why don't take a look at [Angular CLI Task Provider](https://marketplace.visualstudio.com/items?itemName=genuitec.angular-cli-task-provider).
+If you plan to use this extension for Angular CLI development, why don't take a look at [Angular CLI Task Provider](https://marketplace.visualstudio.com/items?itemName=Genuitec.angular-cli-task-provider).
 
 
 ## License
